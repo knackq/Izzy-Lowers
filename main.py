@@ -10,8 +10,18 @@ def encode(original):
     encoded = (''.join(list))
     return encoded
 
+
+def decode(encoded): # isabelle Carminati
+    list = []
+    string = [*encoded]
+    for i in string:
+        i = str(int(i)-3)
+        list.append(i)
+    decoded = (''.join(list))
+    return decoded
+
+
 def main():
-    original = None
     loop = True
 
 
